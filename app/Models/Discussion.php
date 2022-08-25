@@ -42,4 +42,5 @@ class Discussion extends Model
     {
         return 'slug';
     }
+
 }

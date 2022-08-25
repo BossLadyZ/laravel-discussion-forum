@@ -25,6 +25,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::resource('discussion', DiscussionController::class);
+
 Route::resource('discussion/{discussion}/replies', ReplyController::class);
 
 Route::post('discussion/{discussion}/replies/{reply}/mark-as-best-reply', [DiscussionController::class, 'reply'])->name('discussion.best-reply');

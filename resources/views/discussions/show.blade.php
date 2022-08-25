@@ -44,7 +44,9 @@
             </div>
             <div class="card-body">
                 {!! $reply->content !!}
-
+                @if ($discussion->bestReply)
+                    has a best reply
+                @endif
             </div>
         </div>
 
